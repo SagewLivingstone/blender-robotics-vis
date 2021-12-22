@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="taskBin1">
+
+    <link name="taskBin1_root">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="bin">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\bin.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="$Material_0"/>
+      </visual>
+      <collision name="bin.col">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\bin.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <material name="$Material_0">
+      <color rgba="0.64 0.64 0.64 1.0"/>
+    </material>
+
+  </robot>

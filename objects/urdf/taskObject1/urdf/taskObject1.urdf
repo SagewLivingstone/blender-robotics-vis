@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="taskObject1">
+
+    <link name="obj_root">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="object">
+        <origin xyz="0 0 0" rpy="-0.00614 0.01569 1.13553"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\object.dae" scale="0.99999 0.99999 1.0"/>
+        </geometry>
+        <material name="$Material_0"/>
+      </visual>
+    </link>
+
+    <material name="$Material_0">
+      <color rgba="1.0 0.6 0.8 1.0"/>
+    </material>
+
+  </robot>

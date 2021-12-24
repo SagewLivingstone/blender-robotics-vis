@@ -36,7 +36,7 @@ Most of these renders were done well before the project to upgrade Phobos began,
 ![Phobos toolbar in Blender 2.79b](./images/phobos_toolbar_2-79b.jpg)
 *Phobos toolbar in Blender 2.79b (old version)*
 
-![Phobos toolbar in Blender 2.9.3](./images/)
+![Phobos toolbar in Blender 2.9.3](./images/phobos_toolbar_2-9-3.jpg)
 *Phobos toolbar in Blender 2.9.3 (upgraded version)*
 
 At its current state as of 12/22/2021, Phobos has now been upgraded to function with all base tools (of interest to us) in Blender 2.9.3. The sole exception is that materials do not export/import correctly: this is a complicated and deep issue, which is explained further below. Care was put into ensuring that all of the tools that were relevant to our work were transferred over correctly. This means that anyone who has a URDF can now import it into Blender 2.9.3 (our rendering platform) with a few button clicks, instead of needing deep knowledge of Blender and URDF composition. This also means that users who are somewhat comfortable with Blender can modify and create their own URDFs, and export them into their own programs. This was a main goal for this project, and should hopefully lead to higher quality models and renders in the near future.

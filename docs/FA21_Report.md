@@ -20,9 +20,11 @@ An extension of this goal was to package up these tools into a manner that anyon
 One of the first goals that became immediately apparent with the newly created scenes and tools was the ability to render out high quality images for our papers using Blender. Two major image renders were made for both Yeping and Pragathi's papers, consisting of robots placed in relevant scenes to demonstrate operations. The images were static and used mostly pre-made objects with a few exceptions.
 
 ![Yeping cabinet scene](../images/sawyer_cabinet_scene/image0.png)
+
 *Render of a Sawyer robot scenario opening a cabinet*
 
 ![Pragathi plane wing scene](../images/plane_wing_scene_panda/render_final.png)
+
 *Render of an operator controlling a Franka Panda to work on an airplane wing*
 
 The images are rendered in Blender 2.9.3 using the Cycles rendering engine, but were initially processed in Eevee. This allowed for a rapid iteration on lighting and composition, and was one of the many useful tips learned along the way. The images were intentionally left matte and mostly-untextured for the sake of readability, however some work needs to be done in the rendering techniques to allow for better distinction between objects. Blender is built around Photorealistic rendering out-of-the-box, so modifications need to be made to get a more 'cartoonish' look for a technical diagram. Objects were sourced from various free 3D model websites, such as *cgtrader* and *free3d*, but some cases models were custom-built as a satisfactory model could not be found online. (e.g. the plaster gun on the Panda arm)
@@ -34,9 +36,11 @@ This method of rendering is highly powerful as it uses the flexible Blender prog
 Most of these renders were done well before the project to upgrade Phobos began, so the importing of scenes and robots needed to be done manually. This leads into the desire to upgrade Phobos (Blender plugin used to interface with URDF models), as the manual process is very tedious and requires strong knowledge of Blender. Phobos currently exists in a stable state as an addon to Blender 2.79b. However, this Blender version is now dated, and newer rendering tools exist in the current version 2.9.3. Thus, it was determined that upgrading Phobos to Blender 2.9.3 was a good allocation of time, as it would allow other lab members to utilize these tools to render out their own images/videos as well.
 
 ![Phobos toolbar in Blender 2.79b](./images/phobos_toolbar_2-79b.jpg)
+
 *Phobos toolbar in Blender 2.79b (old version)*
 
 ![Phobos toolbar in Blender 2.9.3](./images/phobos_toolbar_2-9-3.jpg)
+
 *Phobos toolbar in Blender 2.9.3 (upgraded version)*
 
 At its current state as of 12/22/2021, Phobos has now been upgraded to function with all base tools (of interest to us) in Blender 2.9.3. The sole exception is that materials do not export/import correctly: this is a complicated and deep issue, which is explained further below. Care was put into ensuring that all of the tools that were relevant to our work were transferred over correctly. This means that anyone who has a URDF can now import it into Blender 2.9.3 (our rendering platform) with a few button clicks, instead of needing deep knowledge of Blender and URDF composition. This also means that users who are somewhat comfortable with Blender can modify and create their own URDFs, and export them into their own programs. This was a main goal for this project, and should hopefully lead to higher quality models and renders in the near future.
